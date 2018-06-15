@@ -54,13 +54,11 @@
 <script>
 
 
-  import VueTimepicker from 'vue2-timepicker'
   import moment from 'moment'
 
 
   export default {
     name: "ScheduleComponent",
-    components: {VueTimepicker},
     data() {
       return {
         nameInvalid: false,

@@ -59,7 +59,6 @@
 <script>
   import NavBar from './NavBar'
   import TestComponent from "./TestComponent";
-  import anime from 'animejs'
 
   export default {
     name: "TestSchedule",
