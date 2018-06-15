@@ -11,7 +11,7 @@ Vue.use(Vuelidate)
 
 
 window.axios = axios
-axios.defaults.baseURL = 'http://18.188.184.202:8000/api/'
+axios.defaults.baseURL = 'http://18.188.184.202:8080/api/'
 
 new Vue({
   el: '#app',
