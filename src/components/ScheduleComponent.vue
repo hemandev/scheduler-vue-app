@@ -8,7 +8,7 @@
 <div class="input-error-holder">
     <input type="text" v-model="name" class="form-control" placeholder="Enter Schedule Name" aria-label="schedule-name">
 
-    <p class=" invalid  text-danger" v-if="nameInvalid"> Please enter a name</p>
+    <p class=" invalid  name-invalid text-danger" v-if="nameInvalid"> Please enter a name</p>
 </div>
 
     <div class="input-error-holder">
