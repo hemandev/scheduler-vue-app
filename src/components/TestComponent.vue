@@ -90,7 +90,7 @@
         else
           this.dateInvalid = false
 
-        console.log("date" + moment(this.startDateTime).format('YYYY-DD-MM HH:mm:ss'))
+        console.log("date" + moment(this.startDateTime).format('YYYY-MM-DD HH:mm:ss'))
 
         return true
 
@@ -108,7 +108,7 @@
           axios.post('/tasks', {
             name: this.name,
             duration: this.duration,
-            startDateTime: moment(this.startDateTime).format('YYYY-DD-MM HH:mm:ss'),
+            startDateTime: moment(this.startDateTime).format('YYYY-MM-DD HH:mm:ss'),
             email: 'anand@gmail.com'
           })
 
@@ -125,6 +125,7 @@
               }
 
               else{
+                console.log("inside failed!!" + JSON.stringify(res.data))
                 this.$emit('failed')
                 this.spinnerFlag = false
               }
@@ -134,6 +135,7 @@
 
             .catch(err => {
               this.$emit('failed')
+              console.log("error" + err)
               this.spinnerFlag = false
             })
 
