@@ -5,8 +5,6 @@
 
     <h1> Create Schedule</h1>
 
-
-
 <div class="input-error-holder">
     <input type="text" v-model="name" class="form-control" placeholder="Enter Schedule Name" aria-label="schedule-name">
 
@@ -76,7 +74,8 @@
         endTime: '',
         days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         checkedDays: [],
-        spinnerFlag: false
+        spinnerFlag: false,
+        count: 0
       }
     },
 
@@ -142,6 +141,7 @@
 
 
       saveSchedule() {
+
 
         let daysArr = []
 
